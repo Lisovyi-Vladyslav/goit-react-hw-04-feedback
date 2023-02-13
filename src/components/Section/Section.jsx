@@ -1,4 +1,4 @@
-import PropTypes from "prop-types";
+
 
 export const Section = ({title, children}) => {
   // console.log(props);

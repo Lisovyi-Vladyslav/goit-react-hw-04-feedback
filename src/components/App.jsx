@@ -1,13 +1,9 @@
 import { useState } from "react";
-import ReactDOM from "react-dom";
-import feedbackWidget from 'feedbackWidget.json';
-
-
 import { Statistics } from 'components/Statistics/Statistics';
 import { FeedbackOptions } from 'components/FeedbackOptions/FeedbackOptions';
 import { Section } from 'components/Section/Section'
 import { Notification } from 'components/Notification/Notification'
-import { Component } from 'react';
+
 
  export const  App = () => {
 
