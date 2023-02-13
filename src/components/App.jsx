@@ -18,6 +18,7 @@ import { Notification } from 'components/Notification/Notification'
 
    const handleClick = e => {
      const { name } = e.target;
+     // eslint-disable-next-line default-case
      switch (name) {
        case 'good':
          console.log('клік на good');
@@ -26,18 +27,16 @@ import { Notification } from 'components/Notification/Notification'
     ));
         
     break;
-
-       case 'neutral':
-                  console.log('клік на neutral');
+    case 'neutral':
+    console.log('клік на neutral');
      setNeutral(prevState => (
       prevState + 1
      ));
     break;
-
        case 'bad':
-         console.log('клік на bad');
-         setBad(prevState => (
-           prevState + 1
+      console.log('клік на bad');
+      setBad(prevState => (
+        prevState + 1
          ));
          break;
 }
