@@ -1,4 +1,4 @@
-
+import PropTypes from "prop-types";
 
 import feedbackWidget from 'feedbackWidget.json';
 
@@ -19,4 +19,13 @@ export const Statistics = (props) => {
         </ul>
        </>
   );
+};
+
+Statistics.propTypes = {
+  positivePercentage: PropTypes.number,
+  total: PropTypes.number,
+  bad: PropTypes.number,
+  neutral: PropTypes.number,
+  good: PropTypes.number,
+ 
 };

@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import feedbackOptions from 'feedbackOptions.json';
 
 
@@ -18,4 +19,8 @@ export const FeedbackOptions = (props) => {
           </ul>
        </>
   );
+};
+
+FeedbackOptions.propTypes = {
+   onLeaveFeedback: PropTypes.func,
 };
